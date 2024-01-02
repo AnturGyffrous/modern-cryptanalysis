@@ -6,21 +6,18 @@ using (var reader = new StreamReader("./shakespeare.txt"))
     while ((line = reader.ReadLine()) != null)
     {
         line = line.Trim().ToLowerInvariant();
-        if (line.Length > 1)
+        for (int i = 0; i < line.Length - 1; i++)
         {
-            for (int i = 0; i < line.Length - 1; i++)
+            if (char.IsLetter(line[i]) && char.IsLetter(line[i + 1]))
             {
-                if (char.IsLetter(line[i]) && char.IsLetter(line[i + 1]))
+                var digraph = $"{line[i]}{line[i+1]}";
+                if (digraphs.ContainsKey(digraph))
                 {
-                    var digraph = $"{line[i]}{line[i+1]}";
-                    if (digraphs.ContainsKey(digraph))
-                    {
-                        digraphs[digraph]++;
-                    }
-                    else
-                    {
-                        digraphs.Add(digraph, 1);
-                    }
+                    digraphs[digraph]++;
+                }
+                else
+                {
+                    digraphs.Add(digraph, 1);
                 }
             }
         }

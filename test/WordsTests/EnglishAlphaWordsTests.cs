@@ -12,5 +12,6 @@ public class EnglishAlphaWordsTests
         var result = sut.Contains("the");
 
         // Assert
+        result.Should().BeTrue();
     }
 }

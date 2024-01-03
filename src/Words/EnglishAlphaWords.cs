@@ -1,5 +1,10 @@
 namespace Words;
 
-public class EnglishAlphaWords : IWords
+using System.Collections.ObjectModel;
+
+public class EnglishAlphaWords : ReadOnlyCollection<string>, IWords
 {
+    public EnglishAlphaWords(IList<string> list) : base(list)
+    {
+    }
 }

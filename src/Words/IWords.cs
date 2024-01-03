@@ -1,5 +1,5 @@
 namespace Words;
 
-public interface IWords
+public interface IWords : ICollection<string>
 {
 }

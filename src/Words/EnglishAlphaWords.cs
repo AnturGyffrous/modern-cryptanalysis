@@ -1,16 +1,23 @@
 ﻿namespace Words;
 
-public class EnglishAlphaWords : List<string>
+public class EnglishAlphaWords : ReadOnlyCollection<string>
 {
-    public EnglishAlphaWords()
+    public EnglishAlphaWords() : base(ReadEnglishAlphaWords())
     {
+    }
+
+    private static IList<string> ReadEnglishAlphaWords()
+    {
+        var list = new List<string>();
         using (var reader = new StreamReader("words_alpha.txt"))
         {
             string word;
             while ((word = reader.ReadLine()) != null)
             {
-                Add(word);
+                list.Add(word);
             }
         }
+
+        return list;
     }
 }

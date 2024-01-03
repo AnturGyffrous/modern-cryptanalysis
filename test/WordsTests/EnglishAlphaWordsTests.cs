@@ -1,6 +1,6 @@
 namespace WordsTests;
 
-public class UnitTest1
+public class EnglishAlphaWordsTests
 {
     [Fact]
     public void Test1()

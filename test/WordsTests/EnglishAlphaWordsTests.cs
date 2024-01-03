@@ -3,8 +3,12 @@ namespace WordsTests;
 public class EnglishAlphaWordsTests
 {
     [Fact]
-    public void Test1()
+    public void ContainsShouldReturnTrueIfWordExistsInCollection()
     {
+        // Arrange
+        var sut = new EnglishAlphaWords();
 
+        // Act
+        // Assert
     }
 }

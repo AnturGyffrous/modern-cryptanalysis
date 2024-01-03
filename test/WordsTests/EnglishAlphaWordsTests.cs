@@ -9,6 +9,8 @@ public class EnglishAlphaWordsTests
         var sut = new EnglishAlphaWords();
 
         // Act
+        var result = sut.Contains("the");
+
         // Assert
     }
 }

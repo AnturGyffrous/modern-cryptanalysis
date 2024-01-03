@@ -6,7 +6,7 @@ public class WordsTests
 
     public WordsTests()
     {
-        _fixture.Register<IWords>(() => new EnglishAlphaWords());
+        _fixture.Register<ICollection<string>>(() => new EnglishAlphaWords());
     }
 
     [Fact]

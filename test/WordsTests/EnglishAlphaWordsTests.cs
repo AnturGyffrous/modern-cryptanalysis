@@ -2,14 +2,15 @@ namespace WordsTests;
 
 public class EnglishAlphaWordsTests
 {
-    [Fact]
-    public void ContainsShouldReturnTrueIfWordExistsInCollection()
+    [Theory]
+    [InlineData("the")]
+    public void ContainsShouldReturnTrueIfWordExistsInCollection(string word)
     {
         // Arrange
         var sut = new EnglishAlphaWords();
 
         // Act
-        var result = sut.Contains("the");
+        var result = sut.Contains(word);
 
         // Assert
         result.Should().BeTrue();

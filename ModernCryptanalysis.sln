@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{18779A22
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordsTests", "test\WordsTests\WordsTests.csproj", "{0C4625D8-550F-4C8D-96C8-9457B2D783AC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{00E081C5-2ACD-4966-A6CD-4EADF093032B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Words", "src\Words\Words.csproj", "{64764A13-D215-4AEA-BED2-B33887D7BC59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +24,13 @@ Global
 		{0C4625D8-550F-4C8D-96C8-9457B2D783AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C4625D8-550F-4C8D-96C8-9457B2D783AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C4625D8-550F-4C8D-96C8-9457B2D783AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64764A13-D215-4AEA-BED2-B33887D7BC59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64764A13-D215-4AEA-BED2-B33887D7BC59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64764A13-D215-4AEA-BED2-B33887D7BC59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64764A13-D215-4AEA-BED2-B33887D7BC59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0C4625D8-550F-4C8D-96C8-9457B2D783AC} = {18779A22-A0CB-410E-84BB-6A63D0964E8A}
+		{64764A13-D215-4AEA-BED2-B33887D7BC59} = {00E081C5-2ACD-4966-A6CD-4EADF093032B}
 	EndGlobalSection
 EndGlobal

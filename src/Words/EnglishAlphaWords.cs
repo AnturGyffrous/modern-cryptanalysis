@@ -1,6 +1,6 @@
 ﻿namespace Words;
 
-public class EnglishAlphaWords
+public class EnglishAlphaWords : List<string>
 {
 
 }

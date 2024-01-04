@@ -8,4 +8,9 @@ public class MatchedWords
     {
         _words = words;
     }
+
+    public double Calculate(string text)
+    {
+        return 1;
+    }
 }

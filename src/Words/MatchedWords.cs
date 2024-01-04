@@ -11,6 +11,8 @@ public class MatchedWords
 
     public double Calculate(string text)
     {
-        return 1;
+        var words = text.Split(' ');
+        var matches = words.Where(x => _words.Contains(x)).Count();
+        return (double)matches / words.Count();
     }
 }

@@ -17,6 +17,20 @@ public class MatchedWordsTests
     }
 
     [Fact]
+    public void CalculateShouldBeFiftyPercentIfHalfTheWordsMatch()
+    {
+        // Arrange
+        var words = new List<string> { "to", "be", "question" };
+        var sut = new MatchedWords(words);
+
+        // Act
+        var result = sut.Calculate("to be or not to be that is the question");
+
+        // Assert
+        result.Should().Be(0.5);
+    }
+
+    [Fact]
     public void CalculateShouldBeZeroPercentIfNoWordsMatch()
     {
         // Arrange

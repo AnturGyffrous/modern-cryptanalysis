@@ -17,6 +17,20 @@ public class MatchedWordsTests
     }
 
     [Fact]
+    public void CalculateShouldBeOneHundredPercentIfAllWordsMatchRegardlessOfCase()
+    {
+        // Arrange
+        var words = new List<string> { "the", "quick", "brown", "fox", "jumps", "over", "lazy", "dog" };
+        var sut = new MatchedWords(words);
+
+        // Act
+        var result = sut.Calculate("THE quick brown Fox jumps over the lazy Dog");
+
+        // Assert
+        result.Should().Be(1);
+    }
+
+    [Fact]
     public void CalculateShouldBeFiftyPercentIfHalfTheWordsMatch()
     {
         // Arrange

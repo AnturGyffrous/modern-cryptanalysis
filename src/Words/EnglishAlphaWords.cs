@@ -11,7 +11,7 @@ public class EnglishAlphaWords : ReadOnlyCollection<string>
         var list = new List<string>();
         using (var reader = new StreamReader("words_alpha.txt"))
         {
-            string word;
+            string? word;
             while ((word = reader.ReadLine()) != null)
             {
                 list.Add(word);

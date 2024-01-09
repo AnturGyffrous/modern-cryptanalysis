@@ -1,6 +1,6 @@
 namespace CaesarTests;
 
-public class UnitTest1
+public class CipherTests
 {
     [Fact]
     public void Test1()

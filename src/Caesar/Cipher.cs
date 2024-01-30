@@ -1,6 +1,3 @@
 ﻿namespace Caesar;
 
-public class Cipher
-{
-
-}
+public class Cipher { }

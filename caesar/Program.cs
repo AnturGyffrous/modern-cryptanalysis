@@ -20,6 +20,5 @@ for (int k = 1; k < 26; k++)
         }
     }
 
-    Console.WriteLine($"{k,2} {plaintext.ToString().ToLowerInvariant()}");
-
+    Console.WriteLine($"{k, 2} {plaintext.ToString().ToLowerInvariant()}");
 }

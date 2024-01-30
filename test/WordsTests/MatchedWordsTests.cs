@@ -6,7 +6,17 @@ public class MatchedWordsTests
     public void CalculateShouldBeOneHundredPercentIfAllWordsMatch()
     {
         // Arrange
-        var words = new List<string> { "the", "quick", "brown", "fox", "jumps", "over", "lazy", "dog" };
+        var words = new List<string>
+        {
+            "the",
+            "quick",
+            "brown",
+            "fox",
+            "jumps",
+            "over",
+            "lazy",
+            "dog"
+        };
         var sut = new MatchedWords(words);
 
         // Act
@@ -20,7 +30,17 @@ public class MatchedWordsTests
     public void CalculateShouldBeOneHundredPercentIfAllWordsMatchRegardlessOfCase()
     {
         // Arrange
-        var words = new List<string> { "the", "quick", "brown", "fox", "jumps", "over", "lazy", "dog" };
+        var words = new List<string>
+        {
+            "the",
+            "quick",
+            "brown",
+            "fox",
+            "jumps",
+            "over",
+            "lazy",
+            "dog"
+        };
         var sut = new MatchedWords(words);
 
         // Act
@@ -48,7 +68,17 @@ public class MatchedWordsTests
     public void CalculateShouldBeZeroPercentIfNoWordsMatch()
     {
         // Arrange
-        var words = new List<string> { "the", "quick", "brown", "fox", "jumps", "over", "lazy", "dog" };
+        var words = new List<string>
+        {
+            "the",
+            "quick",
+            "brown",
+            "fox",
+            "jumps",
+            "over",
+            "lazy",
+            "dog"
+        };
         var sut = new MatchedWords(words);
 
         // Act

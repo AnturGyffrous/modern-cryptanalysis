@@ -2,9 +2,8 @@
 
 public class EnglishAlphaWords : ReadOnlyCollection<string>
 {
-    public EnglishAlphaWords() : base(ReadEnglishAlphaWords())
-    {
-    }
+    public EnglishAlphaWords()
+        : base(ReadEnglishAlphaWords()) { }
 
     private static IList<string> ReadEnglishAlphaWords()
     {
